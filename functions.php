@@ -16,7 +16,7 @@ if(!function_exists('pilot_setup')){
     require_once( 'resources/library/dictionary.php' );
 
     // add support for post formats (NB: may be moved to library for a modular setup - future case)
-    add_theme_support('post_formats', ['aside']);
+    add_theme_support( 'post-formats',  array ( 'aside', 'gallery', 'quote', 'image', 'video' ) );
     add_theme_support('automatic-feed-links');
     add_theme_support('post-thumbnails');
     add_theme_support('page-attributes');
