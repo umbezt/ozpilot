@@ -8,8 +8,13 @@ function section_container_shortcode( $attributes, $content = null ) {
 	$atts = shortcode_atts( [
 		'class' => '',		
 	], $attributes );
-
-	return '<section class="' . $atts['class'] . '" > <div class="container" >' . do_shortcode($content) . '</div></section>';
+        if ($atts['class'] !== '')
+	{
+		return '<section class="' . $atts['class'] . '" > <div class="container" >' . do_shortcode($content) . '</div></section>';
+	
+	}
+	else
+	{	return '<section> <div class="container" >' . do_shortcode($content) . '</div></section>';}
 }
 add_shortcode( 'section_container', 'section_container_shortcode' );
 
@@ -22,7 +27,14 @@ function section_fullwidth_shortcode( $attributes, $content = null ) {
 	$atts = shortcode_atts( [
 		'class' => '',		
 	], $attributes );
+         if ($atts['class'] !== '')
+	 {
+		 return '<section class="' . $atts['class'] . '" > <div class="container-fluid" >' . do_shortcode($content) . '</div></section>';
+	 }
+	else
+	{
+		return '<section> <div class="container-fluid" >' . do_shortcode($content) . '</div></section>';
 
-	return '<section class="' . $atts['class'] . '" > <div class="container-fluid" >' . do_shortcode($content) . '</div></section>';
+	}
 }
 add_shortcode( 'section_fullwidth', 'section_fullwidth_shortcode' );
