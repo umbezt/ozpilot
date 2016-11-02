@@ -14,10 +14,13 @@ include('PilotDefaults/ShortCodes/bootstrapGrid.php'); // Shortcodes for Bootstr
 include('PilotDefaults/ShortCodes/linkButton.php'); // Shortcode for Link Buttons in the editor
 include('PilotDefaults/ShortCodes/anchorTag.php'); // Shortcode for Anchor Tags in the editor
 include('PilotDefaults/ShortCodes/tables.php'); // Shortcode for Tables in the editor
+include('PilotDefaults/ShortCodes/section.php'); // Shortcode for Sections in the editor
 
 // Custom Post Types
 include('CustomPostTypes/PilotPostType/PilotPostType.php');
 
+// Theme settings
+include('theme_settings/pilot_menu.php');
 /**
  * Uncomment the beginning of the line below to test the example custom post type.
  * This is used to understand how custom post types are generated in Pilot.
