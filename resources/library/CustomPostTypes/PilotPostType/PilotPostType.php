@@ -60,10 +60,10 @@ class PilotPostType
                 $options['taxonomy'],
                 $this->post_type,
                 array(
-                    'hierarchical' => $options['hierarchical'] ?: TRUE,
-                    'label' => $options['label'] ?: 'Categories',
-                    'query_var' => $options['query_var'] ?: TRUE,
-                    'rewrite' => $options['rewrite'] ?: TRUE)
+                    'hierarchical' => $options['hierarchical'] ? $options['hierarchical']: TRUE,
+                    'label' => $options['label'] ?  $options['label']: 'Categories',
+                    'query_var' => $options['query_var'] ? $options['query_var'] : TRUE,
+                    'rewrite' => $options['rewrite'] ?  $options['rewrite'] : TRUE)
             );
         };
         add_action('init', $build(), 0);
