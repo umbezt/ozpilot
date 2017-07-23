@@ -1,26 +1,19 @@
-# pilot
+# Ozpilot
 WordPress + Bootstrap Starter theme for a fluid workflow.
 
 - [Installation](#installation)
-    - [Download](#download)
-    - [Dependencies](#dependencies)
+    - [Notes](#notes)   
     - [Initiate](#initiate)
 
 ## Installation
-This theme is a very easy 3 step set up.
+This theme is a very to step set up just clone the repo.
 
-### Composer
-Clone this repository into your theme directory.
-
-### Dependencies.
-1. Run `bower install` to pull the `wp-bootstrap-navwalker` into the project.
-2. Run `npm install` to setup gulp and laravel-elixir in your project.
-
+### Notes.
+This theme uses a the WP navwalker by [Edward McIntyre](https://github.com/twittem/wp-bootstrap-navwalker)
+It works the latest node
 ### Initiate
-1. Run `gulp default` this will load the `wp-bootstrap-navwalker` into the theme directory.
-2. Remove `wp-bootstrap-navwalker` from the `.gitignore` file.
-3. Afterwards you can run `gulp watch` as you work.
-
-
+1. Run `npm install` to install dependencies 
+2. `npm run dev` for dev `npm run watch` for watch
+3. `npm run prod`  for production
 
 Screenshot [source](http://www.infobarrel.com/media/image/85576.jpg)

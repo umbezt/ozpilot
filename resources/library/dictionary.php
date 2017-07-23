@@ -16,9 +16,6 @@ include('PilotDefaults/ShortCodes/anchorTag.php'); // Shortcode for Anchor Tags 
 include('PilotDefaults/ShortCodes/tables.php'); // Shortcode for Tables in the editor
 include('PilotDefaults/ShortCodes/section.php'); // Shortcode for Sections in the editor
 
-// Custom Post Types
-include('CustomPostTypes/PilotPostType/PilotPostType.php');
-
 // Theme settings
 include('theme_settings/pilot_menu.php');
 /**
